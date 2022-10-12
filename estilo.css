@@ -1,0 +1,169 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.cabecalho{
+	display: flex;
+}
+.container-principal{
+	display: flex;
+}
+.rodape{
+	margin-top: 20px;
+	font-size: 0.8em;
+	text-align: center;
+}
+@media screen and (min-width: 320px) {
+	/*Configuraçoes do cabeçalho*/
+	.cabecalho{
+		flex-direction: column;
+		padding: 40px 20px 30px 20px;
+	}
+	.descricao-team{
+		margin-top: 30px;
+	}
+	/*Configurações dos conteudo principal*/
+	.container-principal{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.container-apresentacao{
+		padding: 10px;
+		position: relative;
+	}
+	.imagem-apresentacao{
+		max-width: 120px;
+	}
+	.nome{
+		text-transform: capitalize;
+		font-size: 0.8em;
+		margin-top: 5px;
+	}
+	.profissao{
+		rotate: 90deg;
+		position: absolute;
+		text-transform: uppercase;
+		font-size: 0.6em;
+	}
+	.p1{
+		top: 50px;
+		right: -40px;
+	}
+	.p2{
+		top: 43px;
+		right: -33px;
+	}
+	.p3{
+		top: 33px;
+		right: -25px;
+	}
+	.p4{
+		top: 37px;
+		right: -30px;
+	}
+	.p5{
+		top: 35px;
+		right: -25px;
+	}
+	.p6{
+		top: 35px;
+		right: -25px;
+	}
+	#team2,#team4,#team6{
+		margin-top: 50px;
+	}
+}
+@media screen and (min-width: 420px) {
+	#team4,#team6{
+		margin-top: 0px;
+	}
+	#team2,#team5{
+		margin-top: 60px;
+	}
+}
+@media screen and (min-width: 560px) {
+	.imagem-apresentacao{
+		max-width: 200px;
+	}
+	#team2,#team4,#team6{
+		margin-top: 70px;
+	}
+	#team5{
+		margin-top: 0px;
+	}
+}
+@media screen and (min-width: 660px) {
+	#team4,#team6{
+		margin-top: 0px;
+	}
+	#team2,#team5{
+		margin-top: 90px;
+	}
+	.cabecalho{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.descricao-team{
+		width: 40%;
+	}
+}
+@media screen and (min-width: 880px) {
+	.nome{
+		font-size: 1.2em;
+	}
+	.profissao{
+		font-size: 1em;
+	}
+	.imagem-apresentacao{
+		max-width: 300px;
+	}
+	#team2,#team4,#team6{
+		margin-top: 70px;
+	}
+	#team5{
+		margin-top: 0px;
+	}
+	.p1{
+		top: 90px;
+		right: -50px;
+	}
+	.p2{
+		top: 80px;
+		right: -38px;
+	}
+	.p3{
+		top: 63px;
+		right: -25px;
+	}
+	.p4{
+		top: 70px;
+		right: -35px;
+	}
+	.p5{
+		top: 65px;
+		right: -30px;
+	}
+	.p6{
+		top: 65px;
+		right: -30px;
+	}
+	.rodape{
+		font-size: 1em;
+	}
+}
+@media screen and (min-width: 960px) {
+	.container-apresentacao{
+		padding: 30px;
+	}
+	#team4,#team6{
+		margin-top: 0px;
+	}
+	#team2,#team5{
+		margin-top: 120px;
+	}
+}
